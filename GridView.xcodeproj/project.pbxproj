@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C2383719C247BE0078E75C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2383619C247BE0078E75C /* Foundation.framework */; };
+		A4C2383919C247BE0078E75C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2383819C247BE0078E75C /* CoreGraphics.framework */; };
+		A4C2383B19C247BE0078E75C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2383A19C247BE0078E75C /* UIKit.framework */; };
+		A4C2384119C247BE0078E75C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C2383F19C247BE0078E75C /* InfoPlist.strings */; };
+		A4C2384319C247BE0078E75C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2384219C247BE0078E75C /* main.m */; };
+		A4C2384719C247BE0078E75C /* XWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2384619C247BE0078E75C /* XWAppDelegate.m */; };
+		A4C2384A19C247BE0078E75C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C2384819C247BE0078E75C /* Main.storyboard */; };
+		A4C2384D19C247BE0078E75C /* XWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2384C19C247BE0078E75C /* XWViewController.m */; };
+		A4C2384F19C247BE0078E75C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C2384E19C247BE0078E75C /* Images.xcassets */; };
+		A4C2385619C247BF0078E75C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2385519C247BF0078E75C /* XCTest.framework */; };
+		A4C2385719C247BF0078E75C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2383619C247BE0078E75C /* Foundation.framework */; };
+		A4C2385819C247BF0078E75C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C2383A19C247BE0078E75C /* UIKit.framework */; };
+		A4C2386019C247BF0078E75C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C2385E19C247BF0078E75C /* InfoPlist.strings */; };
+		A4C2386219C247BF0078E75C /* GridViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2386119C247BF0078E75C /* GridViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4C2385919C247BF0078E75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C2382B19C247BE0078E75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C2383219C247BE0078E75C;
+			remoteInfo = GridView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4C2383319C247BE0078E75C /* GridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C2383619C247BE0078E75C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4C2383819C247BE0078E75C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4C2383A19C247BE0078E75C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4C2383E19C247BE0078E75C /* GridView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridView-Info.plist"; sourceTree = "<group>"; };
+		A4C2384019C247BE0078E75C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4C2384219C247BE0078E75C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4C2384419C247BE0078E75C /* GridView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridView-Prefix.pch"; sourceTree = "<group>"; };
+		A4C2384519C247BE0078E75C /* XWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWAppDelegate.h; sourceTree = "<group>"; };
+		A4C2384619C247BE0078E75C /* XWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWAppDelegate.m; sourceTree = "<group>"; };
+		A4C2384919C247BE0078E75C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4C2384B19C247BE0078E75C /* XWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWViewController.h; sourceTree = "<group>"; };
+		A4C2384C19C247BE0078E75C /* XWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWViewController.m; sourceTree = "<group>"; };
+		A4C2384E19C247BE0078E75C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4C2385419C247BF0078E75C /* GridViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C2385519C247BF0078E75C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A4C2385D19C247BF0078E75C /* GridViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridViewTests-Info.plist"; sourceTree = "<group>"; };
+		A4C2385F19C247BF0078E75C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4C2386119C247BF0078E75C /* GridViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4C2383019C247BE0078E75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2383919C247BE0078E75C /* CoreGraphics.framework in Frameworks */,
+				A4C2383B19C247BE0078E75C /* UIKit.framework in Frameworks */,
+				A4C2383719C247BE0078E75C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C2385119C247BF0078E75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2385619C247BF0078E75C /* XCTest.framework in Frameworks */,
+				A4C2385819C247BF0078E75C /* UIKit.framework in Frameworks */,
+				A4C2385719C247BF0078E75C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4C2382A19C247BE0078E75C = {
+			isa = PBXGroup;
+			children = (
+				A4C2383C19C247BE0078E75C /* GridView */,
+				A4C2385B19C247BF0078E75C /* GridViewTests */,
+				A4C2383519C247BE0078E75C /* Frameworks */,
+				A4C2383419C247BE0078E75C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4C2383419C247BE0078E75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2383319C247BE0078E75C /* GridView.app */,
+				A4C2385419C247BF0078E75C /* GridViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4C2383519C247BE0078E75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2383619C247BE0078E75C /* Foundation.framework */,
+				A4C2383819C247BE0078E75C /* CoreGraphics.framework */,
+				A4C2383A19C247BE0078E75C /* UIKit.framework */,
+				A4C2385519C247BF0078E75C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4C2383C19C247BE0078E75C /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2384519C247BE0078E75C /* XWAppDelegate.h */,
+				A4C2384619C247BE0078E75C /* XWAppDelegate.m */,
+				A4C2384819C247BE0078E75C /* Main.storyboard */,
+				A4C2384B19C247BE0078E75C /* XWViewController.h */,
+				A4C2384C19C247BE0078E75C /* XWViewController.m */,
+				A4C2384E19C247BE0078E75C /* Images.xcassets */,
+				A4C2383D19C247BE0078E75C /* Supporting Files */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		A4C2383D19C247BE0078E75C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2383E19C247BE0078E75C /* GridView-Info.plist */,
+				A4C2383F19C247BE0078E75C /* InfoPlist.strings */,
+				A4C2384219C247BE0078E75C /* main.m */,
+				A4C2384419C247BE0078E75C /* GridView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4C2385B19C247BF0078E75C /* GridViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2386119C247BF0078E75C /* GridViewTests.m */,
+				A4C2385C19C247BF0078E75C /* Supporting Files */,
+			);
+			path = GridViewTests;
+			sourceTree = "<group>";
+		};
+		A4C2385C19C247BF0078E75C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4C2385D19C247BF0078E75C /* GridViewTests-Info.plist */,
+				A4C2385E19C247BF0078E75C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4C2383219C247BE0078E75C /* GridView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C2386519C247BF0078E75C /* Build configuration list for PBXNativeTarget "GridView" */;
+			buildPhases = (
+				A4C2382F19C247BE0078E75C /* Sources */,
+				A4C2383019C247BE0078E75C /* Frameworks */,
+				A4C2383119C247BE0078E75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GridView;
+			productName = GridView;
+			productReference = A4C2383319C247BE0078E75C /* GridView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4C2385319C247BF0078E75C /* GridViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C2386819C247BF0078E75C /* Build configuration list for PBXNativeTarget "GridViewTests" */;
+			buildPhases = (
+				A4C2385019C247BF0078E75C /* Sources */,
+				A4C2385119C247BF0078E75C /* Frameworks */,
+				A4C2385219C247BF0078E75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C2385A19C247BF0078E75C /* PBXTargetDependency */,
+			);
+			name = GridViewTests;
+			productName = GridViewTests;
+			productReference = A4C2385419C247BF0078E75C /* GridViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4C2382B19C247BE0078E75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Xiaotian Wang";
+				TargetAttributes = {
+					A4C2385319C247BF0078E75C = {
+						TestTargetID = A4C2383219C247BE0078E75C;
+					};
+				};
+			};
+			buildConfigurationList = A4C2382E19C247BE0078E75C /* Build configuration list for PBXProject "GridView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4C2382A19C247BE0078E75C;
+			productRefGroup = A4C2383419C247BE0078E75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4C2383219C247BE0078E75C /* GridView */,
+				A4C2385319C247BF0078E75C /* GridViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4C2383119C247BE0078E75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2384F19C247BE0078E75C /* Images.xcassets in Resources */,
+				A4C2384119C247BE0078E75C /* InfoPlist.strings in Resources */,
+				A4C2384A19C247BE0078E75C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C2385219C247BF0078E75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2386019C247BF0078E75C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4C2382F19C247BE0078E75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2384319C247BE0078E75C /* main.m in Sources */,
+				A4C2384D19C247BE0078E75C /* XWViewController.m in Sources */,
+				A4C2384719C247BE0078E75C /* XWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C2385019C247BF0078E75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C2386219C247BF0078E75C /* GridViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4C2385A19C247BF0078E75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C2383219C247BE0078E75C /* GridView */;
+			targetProxy = A4C2385919C247BF0078E75C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4C2383F19C247BE0078E75C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C2384019C247BE0078E75C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4C2384819C247BE0078E75C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C2384919C247BE0078E75C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4C2385E19C247BF0078E75C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C2385F19C247BF0078E75C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4C2386319C247BF0078E75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A4C2386419C247BF0078E75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4C2386619C247BF0078E75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
+				INFOPLIST_FILE = "GridView/GridView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4C2386719C247BF0078E75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
+				INFOPLIST_FILE = "GridView/GridView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A4C2386919C247BF0078E75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridView.app/GridView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GridViewTests/GridViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A4C2386A19C247BF0078E75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridView.app/GridView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridView/GridView-Prefix.pch";
+				INFOPLIST_FILE = "GridViewTests/GridViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4C2382E19C247BE0078E75C /* Build configuration list for PBXProject "GridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C2386319C247BF0078E75C /* Debug */,
+				A4C2386419C247BF0078E75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C2386519C247BF0078E75C /* Build configuration list for PBXNativeTarget "GridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C2386619C247BF0078E75C /* Debug */,
+				A4C2386719C247BF0078E75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4C2386819C247BF0078E75C /* Build configuration list for PBXNativeTarget "GridViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C2386919C247BF0078E75C /* Debug */,
+				A4C2386A19C247BF0078E75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4C2382B19C247BE0078E75C /* Project object */;
+}
