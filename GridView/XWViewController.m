@@ -91,7 +91,7 @@ int initialGrid[9][9] = {
       }
       [one setTitle:buttonNumber forState:UIControlStateNormal];
       [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-      [one setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+      [one setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
       
       [self.view addSubview:one];
       
