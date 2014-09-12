@@ -9,15 +9,15 @@
 #import "XWViewController.h"
 
 int initialGrid[9][9] = {
-  {1,0,0,0,0,0,0,0,1},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,0,0},
-  {2,0,0,0,0,0,0,0,2},
+  {7,0,0,4,2,0,0,0,9},
+  {0,0,9,5,0,0,0,0,4},
+  {0,2,0,6,9,0,5,0,0},
+  {6,5,0,0,0,0,4,3,0},
+  {0,8,0,0,0,6,0,0,7},
+  {0,1,0,0,4,5,6,0,0},
+  {0,0,0,8,6,0,0,0,2},
+  {3,4,0,9,0,0,1,0,0},
+  {8,0,0,3,0,2,7,4,0},
 };
 
 @interface XWViewController () {
@@ -75,7 +75,7 @@ int initialGrid[9][9] = {
       UIButton *one = [[UIButton alloc] init];
       one.frame = CGRectMake(a, b, buttonSize, buttonSize);
       one.backgroundColor = [UIColor whiteColor];
-      one.tag = i;
+      one.tag = i*9 + j;
       
       // update a
       if ((col+1) %3 != 0) {
@@ -86,8 +86,12 @@ int initialGrid[9][9] = {
       
       // set the label of the button
       NSString *buttonNumber = [NSString stringWithFormat:@"%d", initialGrid[row][col]];
+      if (initialGrid[row][col] == 0) {
+        buttonNumber = @"";
+      }
       [one setTitle:buttonNumber forState:UIControlStateNormal];
       [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+      [one setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
       
       [self.view addSubview:one];
       
@@ -125,7 +129,7 @@ int initialGrid[9][9] = {
 - (void)buttonPressed:(id)sender
 {
   UIButton *button = (UIButton *)sender;
-  NSLog(@"You pressed the button with tage %d", button.tag);
+  NSLog(@"You pressed the button with tag %d", button.tag);
 }
 
 @end
