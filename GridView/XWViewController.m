@@ -8,8 +8,21 @@
 
 #import "XWViewController.h"
 
+int initialGrid[9][9] = {
+  {1,0,0,0,0,0,0,0,1},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {0,0,0,0,0,0,0,0,0},
+  {2,0,0,0,0,0,0,0,2},
+};
+
 @interface XWViewController () {
   UIView* _gridView;
+  
 }
 
 @end
@@ -55,7 +68,15 @@
     one.frame = CGRectMake(a, b, buttonSize, buttonSize);
     one.backgroundColor = [UIColor whiteColor];
     one.tag = i;
+    
+    // set the label of the button
+    NSString *buttonNumber = [NSString stringWithFormat:@"%d", initialGrid[row][col]];
+    [one setTitle:buttonNumber forState:UIControlStateNormal];
+    [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
     [self.view addSubview:one];
+    
+    
     
     // [self addButton:buttonSize x:a y:b btag:i];
     
