@@ -50,39 +50,59 @@ int initialGrid[9][9] = {
   
   // create button
   CGFloat buttonSize = size / 12.0;
-  CGFloat margin = (size - 9*buttonSize) / 10.0;
+  CGFloat margin = size * 0.01;
+  CGFloat largeMargin = size * 0.04825;
   
+  // relative pos
+  CGFloat a = 0.0;
+  CGFloat b = 0.0;
   
-  
-  for (int i = 0; i < 81; i++) {
-    // row and col
-    int col = i % 9;
-    int row = i / 9;
+  for (int i = 0; i < 9; i++) {
+    for (int j = 0; j < 9; j++) {
+      // row and col
+      int col = j;
+      int row = i;
+      
+      // initialize the first margin
+      if (col == 0) {
+        a = x + largeMargin;
+      }
+      if (row == 0) {
+        b = y + largeMargin;
+      }
+      
+      // add button
+      UIButton *one = [[UIButton alloc] init];
+      one.frame = CGRectMake(a, b, buttonSize, buttonSize);
+      one.backgroundColor = [UIColor whiteColor];
+      one.tag = i;
+      
+      // update a
+      if ((col+1) %3 != 0) {
+        a += (buttonSize + margin);
+      } else {
+        a += (buttonSize + largeMargin);
+      }
+      
+      // set the label of the button
+      NSString *buttonNumber = [NSString stringWithFormat:@"%d", initialGrid[row][col]];
+      [one setTitle:buttonNumber forState:UIControlStateNormal];
+      [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+      
+      [self.view addSubview:one];
+      
+      // create target for button
+      
+      [one addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
     
-    // relative pos
-    CGFloat a = x + margin + col * (buttonSize + margin);
-    CGFloat b = y + margin + row * (buttonSize + margin);
+    // update b
+    if (i % 3 == 2) {
+      b += (buttonSize + largeMargin);
+    } else {
+      b += (buttonSize + margin);
+    }
     
-    // add button
-    UIButton *one = [[UIButton alloc] init];
-    one.frame = CGRectMake(a, b, buttonSize, buttonSize);
-    one.backgroundColor = [UIColor whiteColor];
-    one.tag = i;
-    
-    // set the label of the button
-    NSString *buttonNumber = [NSString stringWithFormat:@"%d", initialGrid[row][col]];
-    [one setTitle:buttonNumber forState:UIControlStateNormal];
-    [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
-    [self.view addSubview:one];
-    
-    
-    
-    // [self addButton:buttonSize x:a y:b btag:i];
-    
-    // create target for button
-    
-    [one addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
   }
   
 }
