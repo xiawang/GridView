@@ -25,6 +25,8 @@ int initialGrid[9][9] = {
   
 }
 
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 @end
 
 @implementation XWViewController
@@ -93,6 +95,21 @@ int initialGrid[9][9] = {
       [one setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
       [one setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
       
+      // method to set highlighted background color
+      UIColor *myColor = [UIColor yellowColor];
+      
+      CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+      UIGraphicsBeginImageContext(rect.size);
+      CGContextRef context = UIGraphicsGetCurrentContext();
+      
+      CGContextSetFillColorWithColor(context, [myColor CGColor]);
+      CGContextFillRect(context, rect);
+      
+      UIImage *backImage = UIGraphicsGetImageFromCurrentImageContext();
+      UIGraphicsEndImageContext();
+      
+      [one setBackgroundImage:backImage forState:UIControlStateHighlighted];
+      
       [self.view addSubview:one];
       
       // create target for button
@@ -130,6 +147,21 @@ int initialGrid[9][9] = {
 {
   UIButton *button = (UIButton *)sender;
   NSLog(@"You pressed the button with tag %d", button.tag);
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color
+{
+  CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+  UIGraphicsBeginImageContext(rect.size);
+  CGContextRef context = UIGraphicsGetCurrentContext();
+  
+  CGContextSetFillColorWithColor(context, [color CGColor]);
+  CGContextFillRect(context, rect);
+  
+  UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  
+  return image;
 }
 
 @end
